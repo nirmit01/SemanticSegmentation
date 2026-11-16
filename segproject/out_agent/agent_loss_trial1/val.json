@@ -1,0 +1,248 @@
+{
+  "tag": "agent_loss_trial1",
+  "args": {
+    "root": "..\\data",
+    "model": "segformer",
+    "variant": "nvidia/mit-b2",
+    "encoder": "resnet50",
+    "loss": "ce:1.000,dice:1.000",
+    "aug": "basic",
+    "epochs": 3,
+    "bs": 4,
+    "lr": 6e-05,
+    "head_mult": 10,
+    "wd": 0.01,
+    "h": 352,
+    "w": 480,
+    "seed": 0,
+    "workers": 0,
+    "max_train": null,
+    "amp": 1,
+    "out": "out_agent",
+    "tag": "agent_loss_trial1"
+  },
+  "params": 27370463,
+  "trainable_params": 27370463,
+  "GFLOPs": 76.6436352,
+  "epoch_time_s": 24.58342711130778,
+  "inference_ms_per_image": 16.059560775756836,
+  "best_epoch": 2,
+  "val": {
+    "mIoU": 0.4474739493312216,
+    "mDice": 0.5445047275530995,
+    "mPrecision": 0.5964586266726059,
+    "mRecall": 0.5284729861597559,
+    "pixel_acc": 0.9134721423874637,
+    "n_classes_present": 29,
+    "per_class": {
+      "Animal": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 2292
+      },
+      "Archway": {
+        "iou": 0.014001349527665317,
+        "dice": 0.027616037265014142,
+        "precision": 0.41553866122751715,
+        "recall": 0.014282618671289452,
+        "gt_pixels": 156904
+      },
+      "Bicyclist": {
+        "iou": 0.6791749224967122,
+        "dice": 0.8089388584804118,
+        "precision": 0.8049690319463024,
+        "recall": 0.8129480346733086,
+        "gt_pixels": 336051
+      },
+      "Bridge": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 19639
+      },
+      "Building": {
+        "iou": 0.8880373369123774,
+        "dice": 0.9406989147414203,
+        "precision": 0.9203609867451781,
+        "recall": 0.9619559998884923,
+        "gt_pixels": 15496688
+      },
+      "Car": {
+        "iou": 0.7983251491878295,
+        "dice": 0.887854067489824,
+        "precision": 0.8293543633028237,
+        "recall": 0.9552327875833815,
+        "gt_pixels": 2498458
+      },
+      "CartLuggagePram": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 26482
+      },
+      "Child": {
+        "iou": 0.5007208073041807,
+        "dice": 0.6673070765289786,
+        "precision": 0.6732232591529074,
+        "recall": 0.6614939691048882,
+        "gt_pixels": 14177
+      },
+      "Column_Pole": {
+        "iou": 0.22552816247320123,
+        "dice": 0.36805055873717285,
+        "precision": 0.47707577764371123,
+        "recall": 0.2995866029152623,
+        "gt_pixels": 688926
+      },
+      "Fence": {
+        "iou": 0.6521623837788437,
+        "dice": 0.7894652368094845,
+        "precision": 0.8215042869046034,
+        "recall": 0.7598314558706004,
+        "gt_pixels": 877159
+      },
+      "LaneMkgsDriv": {
+        "iou": 0.5112722646310432,
+        "dice": 0.6766117219200916,
+        "precision": 0.6895175127542267,
+        "recall": 0.6641801734301487,
+        "gt_pixels": 1179841
+      },
+      "LaneMkgsNonDriv": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 33768
+      },
+      "Misc_Text": {
+        "iou": 0.48765497313397427,
+        "dice": 0.6556022490976573,
+        "precision": 0.6793234237793149,
+        "recall": 0.6334818096453423,
+        "gt_pixels": 415330
+      },
+      "MotorcycleScooter": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 4346
+      },
+      "OtherMoving": {
+        "iou": 0.47413175125449536,
+        "dice": 0.6432691662071673,
+        "precision": 0.6627257634451879,
+        "recall": 0.6249224164172791,
+        "gt_pixels": 252953
+      },
+      "ParkingBlock": {
+        "iou": 0.3857504330555127,
+        "dice": 0.5567386794243342,
+        "precision": 0.6230855435188644,
+        "recall": 0.5031614685302277,
+        "gt_pixels": 169067
+      },
+      "Pedestrian": {
+        "iou": 0.5335663272539685,
+        "dice": 0.695850342788084,
+        "precision": 0.6547934235984898,
+        "recall": 0.7424004030935529,
+        "gt_pixels": 420746
+      },
+      "Road": {
+        "iou": 0.9250867163801465,
+        "dice": 0.9610857614971665,
+        "precision": 0.9629943575260177,
+        "recall": 0.9591847159453617,
+        "gt_pixels": 19889853
+      },
+      "RoadShoulder": {
+        "iou": 0.36186195197917687,
+        "dice": 0.5314223684027407,
+        "precision": 0.7380312723477455,
+        "recall": 0.4151912405901946,
+        "gt_pixels": 275909
+      },
+      "Sidewalk": {
+        "iou": 0.8362065367482856,
+        "dice": 0.9107979086373507,
+        "precision": 0.9004771041347369,
+        "recall": 0.9213580396618914,
+        "gt_pixels": 4131573
+      },
+      "SignSymbol": {
+        "iou": 0.3464992778097545,
+        "dice": 0.5146668602353472,
+        "precision": 0.6655957943925234,
+        "recall": 0.41953425990453774,
+        "gt_pixels": 76051
+      },
+      "Sky": {
+        "iou": 0.924523170087456,
+        "dice": 0.9607815426253797,
+        "precision": 0.9641250837803789,
+        "recall": 0.9574611118166326,
+        "gt_pixels": 10835168
+      },
+      "SUVPickupTruck": {
+        "iou": 0.4571014522685888,
+        "dice": 0.6274119781528169,
+        "precision": 0.7959421592867311,
+        "recall": 0.5177791251488986,
+        "gt_pixels": 512933
+      },
+      "TrafficCone": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "gt_pixels": 4303
+      },
+      "TrafficLight": {
+        "iou": 0.6214714872088313,
+        "dice": 0.766552470532331,
+        "precision": 0.7873233017408748,
+        "recall": 0.7468494046038522,
+        "gt_pixels": 293754
+      },
+      "Train": null,
+      "Tree": {
+        "iou": 0.8122047044231742,
+        "dice": 0.8963719191775296,
+        "precision": 0.8906496629767618,
+        "recall": 0.9021681796769018,
+        "gt_pixels": 7058225
+      },
+      "Truck_Bus": {
+        "iou": 0.15229898966430783,
+        "dice": 0.26433936162467025,
+        "precision": 0.7474029264584785,
+        "recall": 0.16056350486143714,
+        "gt_pixels": 293946
+      },
+      "Tunnel": null,
+      "VegetationMisc": {
+        "iou": 0.6744824789175854,
+        "dice": 0.8056011184465575,
+        "precision": 0.7559065389141032,
+        "recall": 0.8622894941108974,
+        "gt_pixels": 651882
+      },
+      "Wall": {
+        "iou": 0.7146819041083136,
+        "dice": 0.8336029002183584,
+        "precision": 0.8373799379280927,
+        "recall": 0.829859782488542,
+        "gt_pixels": 823221
+      }
+    },
+    "boundary_precision": 0.7408913672994197,
+    "boundary_recall": 0.5446316157766997,
+    "boundary_f1": 0.6277800824810428
+  }
+}

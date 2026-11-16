@@ -1,0 +1,20 @@
+stage,setting,val_mIoU
+tta,none,0.5941649507802954
+tta,flip,0.6000262436163716
+tta,ms,0.5923817387370597
+tta,ms_flip,0.5955946485387551
+ens_weight,w_segformer=0.0,0.5086376496588719
+ens_weight,w_segformer=0.1,0.5155416287383628
+ens_weight,w_segformer=0.2,0.5287356520798955
+ens_weight,w_segformer=0.3,0.5558282427898497
+ens_weight,w_segformer=0.4,0.5814320108605557
+ens_weight,w_segformer=0.5,0.5993663261426895
+ens_weight,w_segformer=0.6,0.6052379222511427
+ens_weight,w_segformer=0.7,0.607055039093147
+ens_weight,w_segformer=0.8,0.6070675998756537
+ens_weight,w_segformer=0.9,0.605397510531053
+ens_weight,w_segformer=1.0,0.6033463638302594
+class_scale,init(all 1.0),0.6070690600066417
+class_scale,pass 1,0.6211194019520739
+class_scale,pass 2,0.6291953373594931
+class_scale,pass 3,0.6295731256336246

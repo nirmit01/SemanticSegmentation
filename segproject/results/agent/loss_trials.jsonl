@@ -1,0 +1,5 @@
+{"trial": 0, "loss": "ce:1.000", "val_mIoU": 0.4265814013512529, "seconds": 95.60223388671875}
+{"trial": 1, "loss": "ce:1.000,dice:1.000", "val_mIoU": 0.4474739493312216, "seconds": 95.00344729423523}
+{"trial": 2, "loss": "ce:1.098,dice:1.430,focal:1.206,lovasz:1.090", "val_mIoU": 0.4514653997984978, "seconds": 120.0656635761261}
+{"trial": 3, "loss": "ce:0.847,dice:1.292,focal:0.875,lovasz:1.784", "val_mIoU": 0.4543344124426653, "seconds": 121.66595268249512}
+{"trial": 4, "loss": "ce:1.927,dice:0.767,focal:1.583,lovasz:1.058", "val_mIoU": 0.45101628724948545, "seconds": 119.0903832912445}

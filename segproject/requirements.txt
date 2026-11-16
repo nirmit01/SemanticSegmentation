@@ -1,0 +1,10 @@
+torch
+torchvision
+transformers
+segmentation-models-pytorch
+optuna
+opencv-python-headless
+pandas
+numpy
+scikit-learn
+matplotlib
